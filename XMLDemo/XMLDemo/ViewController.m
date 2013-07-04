@@ -25,8 +25,8 @@
 {
     [super viewDidAppear:animated];
     
-  //  NSString *strURL = @"http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStore.woa/wpa/MRSS/newreleases/limit=50/rss.xml";
- //   NSArray *arrayTag  =[NSArray arrayWithObjects:@"title",@"link",@"description",@"pubDate", nil];
+    NSString *strURL = @"http://ax.phobos.apple.com.edgesuite.net/WebObjects/MZStore.woa/wpa/MRSS/newreleases/limit=50/rss.xml";
+    NSArray *arrayTag  =[NSArray arrayWithObjects:@"title",@"link",@"description",@"pubDate", nil];
     
     
 #pragma Mark - Call With ProsessBar Syncronus
@@ -34,20 +34,21 @@
     //[tblView reloadData];
     
 #pragma Mark - Call in Background
-   /* [[XMLParser alloc] parseWithURL:strURL RootTag:@"item" TagNames:arrayTag completionHandler:^(NSArray *aryResultList) {
+    /*[[XMLParser alloc] parseWithURL:strURL RootTag:@"item" TagNames:arrayTag completionHandler:^(NSArray *aryResultList) {
                 
         aryXmlData = aryResultList;
         [tblView reloadData];
     }];
-    */
+     */
+    
      
 #pragma Mark - Call in Background with Processbar    
-   /* [[XMLParser alloc] parseWithURL:strURL RootTag:@"item" TagNames:arrayTag  WithProgressBar:self.view completionHandler:^(NSArray *aryResultList) {
+    [[XMLParser alloc] parseWithURL:strURL RootTag:@"item" TagNames:arrayTag  WithProgressBar:self.view completionHandler:^(NSArray *aryResultList) {
         
         aryXmlData = aryResultList;
         [tblView reloadData];
     }];
-*/
+
     
 
 #pragma Mark - Print Data  
@@ -65,7 +66,7 @@
     
     
     
- NSString *strUrl = [NSString stringWithFormat:@"%@index.php?c=glossary&func=glossarylist",WEBSERVICE_DOMAIN];
+// NSString *strUrl = [NSString stringWithFormat:@"%@index.php?c=glossary&func=glossarylist",WEBSERVICE_DOMAIN];
     
 #pragma Mark - Call WebService Syncronus    
     //NSDictionary *dic = [WebServices urlString:strUrl];
@@ -79,9 +80,10 @@
     //}];
     
 #pragma Mark - Call Web Service In BG(Asyncronous) With Handler and Processbar
-    [WebServices urlStringInBG:strUrl progressView:self.view completionHandler:^(NSDictionary *dicResult) {
+  /*  [WebServices urlStringInBG:strUrl progressView:self.view completionHandler:^(NSDictionary *dicResult) {
         NSLog(@"-- cal back %@",dicResult);
     }];
+   */
  
 #pragma Mark - Call Web Service In BG(Asyncronous) with delegate
     //[WebServices urlStringInBG:strUrl delegate:self];

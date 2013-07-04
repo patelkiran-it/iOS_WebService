@@ -19,9 +19,9 @@
 		5E423F8F17854B2700571EC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E423F8E17854B2700571EC6 /* ViewController.m */; };
 		5E423F9217854B2700571EC6 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E423F9017854B2700571EC6 /* ViewController_iPhone.xib */; };
 		5E423F9517854B2700571EC6 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E423F9317854B2700571EC6 /* ViewController_iPad.xib */; };
-		5E423F9D1785580600571EC6 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E423F9C1785580600571EC6 /* XMLParser.m */; };
 		5E423FA1178562B900571EC6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E423FA0178562B900571EC6 /* MBProgressHUD.m */; };
 		5E423FA51785876100571EC6 /* WebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E423FA41785876100571EC6 /* WebServices.m */; };
+		5E423FA91785B20700571EC6 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E423FA81785B20700571EC6 /* XMLParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +42,12 @@
 		5E423F8E17854B2700571EC6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5E423F9117854B2700571EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		5E423F9417854B2700571EC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		5E423F9B1785580600571EC6 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
-		5E423F9C1785580600571EC6 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 		5E423F9F178562B900571EC6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		5E423FA0178562B900571EC6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		5E423FA31785876100571EC6 /* WebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServices.h; sourceTree = "<group>"; };
 		5E423FA41785876100571EC6 /* WebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServices.m; sourceTree = "<group>"; };
+		5E423FA71785B20700571EC6 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		5E423FA81785B20700571EC6 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +94,7 @@
 		5E423F7B17854B2700571EC6 /* XMLDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5E423FA61785B20700571EC6 /* XMLParser */,
 				5E423FA21785875000571EC6 /* WebService */,
 				5E423F9E178562B900571EC6 /* MBProgressHUB */,
 				5E423F8417854B2700571EC6 /* AppDelegate.h */,
@@ -103,8 +104,6 @@
 				5E423F9017854B2700571EC6 /* ViewController_iPhone.xib */,
 				5E423F9317854B2700571EC6 /* ViewController_iPad.xib */,
 				5E423F7C17854B2700571EC6 /* Supporting Files */,
-				5E423F9B1785580600571EC6 /* XMLParser.h */,
-				5E423F9C1785580600571EC6 /* XMLParser.m */,
 			);
 			path = XMLDemo;
 			sourceTree = "<group>";
@@ -139,6 +138,15 @@
 				5E423FA41785876100571EC6 /* WebServices.m */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		5E423FA61785B20700571EC6 /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				5E423FA71785B20700571EC6 /* XMLParser.h */,
+				5E423FA81785B20700571EC6 /* XMLParser.m */,
+			);
+			path = XMLParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +219,9 @@
 				5E423F8217854B2700571EC6 /* main.m in Sources */,
 				5E423F8617854B2700571EC6 /* AppDelegate.m in Sources */,
 				5E423F8F17854B2700571EC6 /* ViewController.m in Sources */,
-				5E423F9D1785580600571EC6 /* XMLParser.m in Sources */,
 				5E423FA1178562B900571EC6 /* MBProgressHUD.m in Sources */,
 				5E423FA51785876100571EC6 /* WebServices.m in Sources */,
+				5E423FA91785B20700571EC6 /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +358,7 @@
 				5E423F9A17854B2700571EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
